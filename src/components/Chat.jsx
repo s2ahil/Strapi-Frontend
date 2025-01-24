@@ -4,12 +4,12 @@ import socket from "../utils/websocket";
 const Chat = ({user}) => {
 
     {console.log(user)}
-    // Use the unique user ID from the authentication
+ 
     const userId = user?.id.toString();
 
     const [message, setMessage] = useState("");
     const [chat, setChat] = useState(() => {
-        // Use user's specific ID to retrieve chat history
+   
         const savedChat = localStorage.getItem(`chatHistory_${userId}`);
         return savedChat ? JSON.parse(savedChat) : [];
     });
