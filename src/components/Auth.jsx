@@ -14,8 +14,8 @@ const Auth = ({ onLogin }) => {
 
     try {
       const endpoint = isLogin 
-        ? 'http://localhost:1337/api/auth/local' 
-        : 'http://localhost:1337/api/auth/local/register';
+        ? 'https://vivid-darling-70e1f28363.strapiapp.com/api/auth/local' 
+        : 'https://vivid-darling-70e1f28363.strapiapp.com/api/auth/local/register';
 
       const payload = isLogin 
         ? { identifier: email, password }
